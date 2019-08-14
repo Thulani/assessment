@@ -1,0 +1,4 @@
+dependencies {
+    testCompile "org.junit.jupiter:junit-jupiter-engine:$v.junit"
+    testImplementation "org.junit.jupiter:junit-jupiter-api:$v.junit"
+}

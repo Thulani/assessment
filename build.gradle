@@ -1,0 +1,25 @@
+allprojects {
+    group 'za.co.investec.thulani'
+    version '1.0-SNAPSHOT'
+}
+
+subprojects {
+    repositories {
+        mavenCentral()
+    }
+
+    apply plugin: 'java'
+    apply plugin: 'idea'
+
+    sourceCompatibility = 1.8
+
+    test {
+        useJUnitPlatform()
+    }
+    
+    ext {
+        v = [
+            junit: '5.4.2'
+        ]
+    }
+}
