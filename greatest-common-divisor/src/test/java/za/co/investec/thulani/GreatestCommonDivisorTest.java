@@ -14,11 +14,11 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
  */
 public class GreatestCommonDivisorTest {
 
-    private GreatestCommonDivisor commonDivisor;
+    private GreatestCommonDivisorDemo commonDivisor;
 
     @BeforeEach
     void init() {
-        commonDivisor = new GreatestCommonDivisor();
+        commonDivisor = new GreatestCommonDivisorDemo();
     }
 
     @Test
@@ -32,6 +32,8 @@ public class GreatestCommonDivisorTest {
     @DisplayName("Positive GCD Test")
     void testGreatestCommonDivisor() {
         assertAll(
+                () -> assertEquals(2, commonDivisor.greatestCommonDivisor(new int[] {-2, -4})),
+                () -> assertEquals(6, commonDivisor.greatestCommonDivisor(new int[] {-6, 6})),
                 () -> assertEquals(0, commonDivisor.greatestCommonDivisor(new int[] {0})),
                 () -> assertEquals(5, commonDivisor.greatestCommonDivisor(new int[] {5})),
                 () -> assertEquals(0, commonDivisor.greatestCommonDivisor(new int[] {0, 0})),

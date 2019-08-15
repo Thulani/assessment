@@ -9,7 +9,7 @@ Find the highest common factor (https://en.wikipedia.org/wiki/Greatest_common_di
 ### Usage
 
 ```
-Run GreatestCommonDivisor as a java application
+Run GreatestCommonDivisorDemo as a java application
 ```
 ## Pretty Address Printer
 
