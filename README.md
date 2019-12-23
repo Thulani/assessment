@@ -36,4 +36,4 @@ Run PrettyPrintAddressDemo as a java application
 
 ## License
 
-Thia project is not licensed
+This project is not licensed
